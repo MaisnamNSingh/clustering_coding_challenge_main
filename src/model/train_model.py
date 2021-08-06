@@ -33,8 +33,6 @@ from model import EncoderDecoderBlock,ClusteringLayer
 sys.path.append('../')
 sys.path.append('./')
 
-__author__ = "Niranjan"
-
 np.random.seed(1)
 tf.random.set_seed(1)
 batch_size = 128
@@ -42,7 +40,7 @@ epochs = 10
 learning_rate = 1e-2
 intermediate_dim = 64
 original_dim = 784
-n_clusters = 3# 3 - 0.291, 4 - 0.280, 5 - 0.228, 6 - 0.227, 10 - 0.192
+n_clusters = 3
 n_epochs   = 50
 batch_size = 128
 activation = 'relu'
