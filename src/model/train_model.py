@@ -2,7 +2,6 @@
 """
 Created on Fri Aug  6 21:59:53 2021
 
-@author: NIRANJAN SINGH
 """
 import argparse
 import os
