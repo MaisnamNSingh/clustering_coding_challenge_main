@@ -2,7 +2,6 @@
 """
 Created on Fri Aug  6 22:37:47 2021
 
-@author: NIRANJAN SINGH
 """
 from time import time
 import os
