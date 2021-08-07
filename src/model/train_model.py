@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Description of your program')
     parser.add_argument('-f','--file', help='Description for foo argument', required=True)
-    parser.add_argument('-p','--plot', help='Description for foo argument', required=False)
+    parser.add_argument('-p','--plot', help='Description for foo argument', required=True)
     args = vars(parser.parse_args())
 
     
