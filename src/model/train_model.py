@@ -193,11 +193,11 @@ if __name__ == '__main__':
     clustering_layer = ClusteringLayer(n_clusters, name='clustering')(encoder.output)
     model = Model(inputs=encoder.input, outputs=[clustering_layer, autoencoder.output])
     
-    if args['plot']=='yes':
-        from tensorflow.keras.utils import plot_model
-        plot_model(model, to_file='model.png', show_shapes=True)
-        from IPython.display import Image
-        Image(filename='model.png')
+    
+    from tensorflow.keras.utils import plot_model
+    plot_model(model, to_file='model.png', show_shapes=True)
+    from IPython.display import Image
+    Image(filename='model.png')
         
     kmeans = KMeans(n_clusters=n_clusters, n_init=20)
     y_pred = kmeans.fit_predict(encoder.predict(x))
